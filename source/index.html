@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
       <a class="main-header__logo" href="#">
         <img
-          src="../source/img/logo.svg"
-          width="185px"
-          height="96px"
+          src="./source/img/logo.svg"
+          width="185"
+          height="96"
           alt="Логотип сайта путешествие в Седону."
         />
       </a>
@@ -35,178 +35,169 @@
           </ul>
         </div>
       </nav>
-      <section class="block-hero">
+    </header>
+    <main class="main-container">
+      <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
-          class="block-hero__welcome block-hero__welcome--inner"
-          src="../source/img/hero-welcome.svg"
+          class="hero__welcome"
+          src="./img/hero-welcome.svg"
           width="458"
           height="352"
           alt="welcome to the gargeous Sedona,because the Grand Canyon sucks!"
         />
       </section>
-    </header>
-    <main class="main-container">
-      <section class="block-advantages">
-        <h2 class="block-advantages__title">
-          Седона - небольшой городок в Аризоне,заслуживающий большего!
-        </h2>
-        <p class="block-advantages__description">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
-        <ol class="block-advantages__list">
-          <li class="block-advantages__item>">
-            <h3 class="block-advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <span class="block-advantages__number">— №1 —</span>
-            <p class="block-advantages__description">
-              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+      <section class="advantages">
+        <div class="advantages__heading heading">
+          <h2 class="heading__title">
+            Седона - небольшой городок в Аризоне,заслуживающий большего!
+          </h2>
+          <p class="heading__description">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__card-content">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <span class="advantages__number">— №1 —</span>
+            <p class="advantages__description">
+              Седона не аттракцион для туристов, там течет своя жизнь
             </p>
-            <img
-              class="block-advantages__sedona-town"
-              src="../source/img/sedona-town-mobile.jpg"
-              width="520px"
-              height="260px"
-              alt="Дом в городе Седона."
-            />
-          </li>
-        </ol>
-        <ul class="block-advantages__list block-advantages__list--icon">
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">Жилье</h3>
-            <p class="block-advantages__description">
+          </div>
+          <img
+            class="advantages__sedona-town"
+            src="./img/sedona-town-mobile.jpg"
+            width="520"
+            height="260"
+            alt="Дом в городе Седона."
+          />
+        </div>
+        <ul class="advantages__list advantages__list--icon">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Жилье</h3>
+            <p class="advantages__description">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">ЕДА</h3>
-            <p class="block-advantages__description">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+          <li class="advantages__item">
+            <h3 class="advantages__title">ЕДА</h3>
+            <p class="advantages__description">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">СУВЕНИРЫ</h3>
-            <p class="block-advantages__description">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Сувениры</h3>
+            <p class="advantages__description">
               Не только китайского, но и местного производства!
             </p>
           </li>
         </ul>
-        <ol class="block-advantages__list">
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">там есть мост дьявола</h3>
-            <span class="block-advantages__number">— №2 —</span>
-            <p class="block-advantages__description">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">там есть мост дьявола</h3>
+            <span class="advantages__number">— №2 —</span>
+            <p class="advantages__description">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
             <img
-              class="block-advantages__diablo-bridge"
-              src="../source/img/diablo-bridge-mobile.jpg"
-              width="520px"
-              height="260px"
+              class="advantages__diablo-bridge"
+              src="./img/diablo-bridge-mobile.jpg"
+              width="520"
+              height="260"
               alt="Вид на мост дьявола."
             />
           </li>
-        </ol>
-        <ol
-          class="block-advantages__list block-advantages__list--without-image"
-        >
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <span class="block-advantages__number">— №3 —</span>
-            <p class="block-advantages__description">
-              ВСЕ интересные места находятся очень близко
+        </ul>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <span class="advantages__number">— №3 —</span>
+            <p class="advantages__description">
+              Все интересные места находятся очень близко
             </p>
           </li>
-        </ol>
-        <ol
-          class="block-advantages__list block-advantages__list--without-image"
-        >
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">КРАСИВАЯ ДОРОГА</h3>
-            <span class="block-advantages__number">— №4 —</span>
-            <p class="block-advantages__description">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+        </ul>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <span class="advantages__number">— №4 —</span>
+            <p class="advantages__description">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-        </ol>
-        <ol
-          class="block-advantages__list block-advantages__list--without-image"
-        >
-          <li class="block-advantages__item">
-            <h3 class="block-advantages__title">МАЛО ТУРИСТОВ</h3>
-            <span class="block-advantages__number">— №5 —</span>
-            <p class="block-advantages__description">
+        </ul>
+        <ul class="advantages__list advantages__list--without-image">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мало туристов</h3>
+            <span class="advantages__number">— №5 —</span>
+            <p class="advantages__description">
               Большинство едет в гранд каньон и толпится там
             </p>
           </li>
-        </ol>
+        </ul>
       </section>
       <section class="block-search-hotel">
-        <h2 class="block-search-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <h2 class="block-search-hotel__title">Заинтересовались?</h2>
         <p class="block-search-hotel__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в седоне
         </p>
-        <a class="button-search-hotel button">Найти Гостиницу</a>
+        <a class="button-search-hotel button">Найти гостиницу</a>
       </section>
       <section class="map">
         <img
           class="map__image"
-          src="../source/img/map-mobile.png"
-          width="320px"
-          height="350px"
+          src="./img/map-mobile.png"
+          width="320"
+          height="350"
           alt="Карта окрестностей Седоны."
         />
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
-          <b>#VISITSEDONA</b>
-        </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a
-                class="social__link social_link--vkontakte"
-                href="https://vk.com/htmlacademy"
-                ><span class="visually-hidden">Мы ВКонтакте</span></a
-              >
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social_link--telegram"
-                href="https://t.me/htmlacademy"
-                ><span class="visually-hidden">Мы в Телеграме</span></a
-              >
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social_link--youtube"
-                href="https://www.youtube.com/@HTMLAcademyRUS"
-                ><span class="visually-hidden">Мы в Ютубе</span></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            ><svg
-              width="27"
-              height="35"
-              viewBox="0 0 27 35"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+        <span class="main-footer__hashtag">#VISITSEDONA</span>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a
+              class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+              ><span class="visually-hidden">Мы ВКонтакте.</span></a
             >
-              <path
-                d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-                fill="black"
-              />
-            </svg>
-          </a>
-        </div>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--telegram"
+              href="https://t.me/htmlacademy"
+              ><span class="visually-hidden">Мы в Телеграме.</span></a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href="https://www.youtube.com/@HTMLAcademyRUS"
+              ><span class="visually-hidden">Мы в Ютубе.</span></a
+            >
+          </li>
+        </ul>
+        <a
+          class="main-footer__copyright-link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          Разработано:
+          <svg
+            width="27"
+            height="35"
+            viewBox="0 0 27 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black"
+            />
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
