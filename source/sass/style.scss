@@ -1,2 +1,20 @@
 // Начните писать стили здесь
-@import "./source/sass/Blocks/header.scss";
+@import "global/variables.scss";
+@import "global/container.scss";
+@import "global/fonts.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+/*blocks*/
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/hero.scss";
+@import "blocks/heading.scss";
+@import "blocks/advantages.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/photo-gallery.scss";
+@import "blocks/photo.scss";
+@import "blocks/video-gallery.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";

@@ -1,0 +1,50 @@
+.advantages__card-content {
+  padding: 54px 18px 40px 18px;
+
+  background-color: $seagull;
+}
+
+.advantages__card-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+}
+
+.advantages__card-number {
+  color: $white;
+}
+
+.advantages__card-description {
+  margin: 0;
+
+  color: $white;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 24px 18px 28px 18px;
+
+  list-style: none;
+  background-color: $whisper;
+}
+
+.advantages__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__list--icon {
+  padding: 23px 18px 46px 18px;
+  background-color: $white;
+}
