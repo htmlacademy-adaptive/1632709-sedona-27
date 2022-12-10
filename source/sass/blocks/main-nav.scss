@@ -1,0 +1,27 @@
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__logo {
+  display: inline-block;
+}
+
+.main-nav__wrapper {
+  background-color: $color-seagull;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-white;
+}
