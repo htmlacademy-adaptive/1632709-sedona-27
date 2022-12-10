@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
 }
 
 .form__input-wrapper {
@@ -15,9 +15,9 @@
 
 .form__input-text {
   font-weight: 700;
-  color: $black;
+  color: rgba($color-black, 0.3);
 
-  background-color: $white-smoke;
+  background-color: $color-white-smoke;
   border: none;
 }
 
@@ -25,29 +25,29 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
 }
 
 .form__label-checkbox {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
 }
 
 .form__button {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: $white;
+  color: $color-white;
   text-transform: uppercase;
 
-  background-color: $seagull;
+  background-color: $color-seagull;
   border: none;
 }
 
 .form__notification {
   margin: 0;
 
-  color: $black-opacity-light;
+  color: rgba($color-black, 0.6);
 }
