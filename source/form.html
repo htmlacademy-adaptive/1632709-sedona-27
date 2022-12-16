@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -9,7 +10,7 @@
     <div class="page__wrapper">
       <header class="main-header">
         <nav class="main-nav main-nav--no-js">
-          <a class="main-nav__logo" href="#">
+          <a class="main-nav__logo" href="index.html">
             <img
               src="./img/svg/logo.svg"
               width="185"
@@ -50,8 +51,8 @@
         </section>
         <section class="feedback">
           <div class="feedback__heading heading">
-            <h1 class="heading__title">Оставьте свой отзыв</h1>
-            <p class="heading__description">
+            <h1 class="feedback__title">Оставьте свой отзыв</h1>
+            <p class="feedback__description">
               Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
               посещенных вами достопримечательностях
             </p>
@@ -61,72 +62,74 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <fieldset class="form__fieldset form__fieldset--username">
-              <legend class="form__legend form__legend--username">
-                Представьтесь:
-              </legend>
-              <ul class="form__input-wrapper">
-                <li class="form__input-item">
-                  <label class="form__label">
-                    ИМЯ*:<input
-                      class="form__input-text"
-                      type="text"
-                      name="firstname"
-                      placeholder="Пётр"
-                    />
-                  </label>
-                </li>
-                <li class="form__input-item">
-                  <label class="form__label">
-                    ФАМИЛИЯ*:<input
-                      class="form__input-text"
-                      type="text"
-                      name="lastname"
-                      placeholder="Пустота"
-                    />
-                  </label>
-                </li>
-                <li class="form__input-item">
-                  <label class="form__label">
-                    Отчество:<input
-                      class="form__input-text"
-                      type="text"
-                      name="patronymic"
-                      placeholder="Викторович"
-                    />
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--contact">
-              <legend class="form__legend form__legend--contact">
-                Контактная информация:
-              </legend>
-              <ul class="form__input-wrapper">
-                <li class="form__input-item">
-                  <label class="form__label"
-                    >Контактный телефон*:
-                    <input
-                      class="form__input-text"
-                      type="tel"
-                      name="phone"
-                      placeholder="Введите телефон"
-                    />
-                  </label>
-                </li>
-                <li class="form__input-item">
-                  <label class="form__label"
-                    >Электронная почта*:
-                    <input
-                      class="form__input-text"
-                      type="email"
-                      name="email"
-                      placeholder="Введите e-mail"
-                    />
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__wrapper">
+              <fieldset class="form__fieldset form__fieldset--username">
+                <legend class="form__legend form__legend--username">
+                  Представьтесь:
+                </legend>
+                <ul class="form__input-wrapper">
+                  <li class="form__input-item">
+                    <label class="form__label">
+                      ИМЯ*:<input
+                        class="form__input-text"
+                        type="text"
+                        name="firstname"
+                        placeholder="Пётр"
+                      />
+                    </label>
+                  </li>
+                  <li class="form__input-item">
+                    <label class="form__label">
+                      ФАМИЛИЯ*:<input
+                        class="form__input-text"
+                        type="text"
+                        name="lastname"
+                        placeholder="Пустота"
+                      />
+                    </label>
+                  </li>
+                  <li class="form__input-item">
+                    <label class="form__label">
+                      Отчество:<input
+                        class="form__input-text"
+                        type="text"
+                        name="patronymic"
+                        placeholder="Викторович"
+                      />
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--contact">
+                <legend class="form__legend form__legend--contact">
+                  Контактная информация:
+                </legend>
+                <ul class="form__input-wrapper">
+                  <li class="form__input-item">
+                    <label class="form__label"
+                      >Контактный телефон*:
+                      <input
+                        class="form__input-text"
+                        type="tel"
+                        name="phone"
+                        placeholder="Введите телефон"
+                      />
+                    </label>
+                  </li>
+                  <li class="form__input-item">
+                    <label class="form__label"
+                      >Электронная почта*:
+                      <input
+                        class="form__input-text"
+                        type="email"
+                        name="email"
+                        placeholder="Введите e-mail"
+                      />
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form__fieldset form__fieldset--impression">
               <legend class="form__legend form__legend--impression">
                 Ваше общее впечатление:
