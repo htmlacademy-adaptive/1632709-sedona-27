@@ -1,8 +1,60 @@
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__fieldset--username {
+  margin: 0;
+  padding: 0 20px 39px;
+
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+}
+
+.form__fieldset--contact {
+  margin: 0;
+  padding: 0 20px 34px;
+
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+}
+
+.form__fieldset--impression {
+  margin: 0;
+  padding: 0 20px 24px;
+
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+}
+
+.form__fieldset--attractions {
+  margin: 0;
+  padding: 0 20px 24px;
+
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+}
+
+.form__fieldset--emotions {
+  margin: 0;
+  padding: 0 20px 24px;
+
+  border-style: none;
+}
 
 .form__legend {
+  padding-top: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   color: $color-black;
 }
 

@@ -1,12 +1,20 @@
 .heading__title {
   margin: 0;
+  padding-bottom: 35px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .heading__description {
   margin: 0;
+
+  text-align: center;
 }
