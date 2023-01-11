@@ -1,4 +1,30 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
+  padding: 0;
+}
+
+.main-header__logo img {
+  width: 185px;
+  min-height: 96px;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+
+  max-width: 100%;
+
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+
+    max-width: 100%;
+
+    transform: translateX(-50%);
+  }
 }

@@ -1,4 +1,10 @@
-.search-hotel {
+.search-hotel iframe {
+  display: block;
+
+  border: none;
+}
+
+.search-hotel__wrapper {
   padding: 38px 18px 49px;
 
   text-align: center;
@@ -14,6 +20,7 @@
 
 .search-hotel__title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 21px;
@@ -21,15 +28,27 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
     font-size: 30px;
   }
 }
 
 .search-hotel__description {
   margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .search-hotel__button {
+  display: inline-block;
   padding: 16px 49px;
 
   font-weight: 700;
@@ -38,8 +57,49 @@
   color: $color-white;
 
   background-color: $color-seagull;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 15px 121px 18px;
   }
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-active;
+  }
+
+  &:disabled {
+    background-color: $color-whisper-2;
+  }
+}
+
+.search-hotel__map {
+  position: relative;
+  max-width: 100%;
+  min-height: 350px;
+}
+
+.search-hotel__map iframe {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border: none;
+}
+
+.search-hotel__size {
+  min-height: 350px;
+}
+
+.search-hotel__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }

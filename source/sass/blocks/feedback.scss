@@ -1,3 +1,18 @@
+.feedback {
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+
 .feedback__heading {
   padding: 36px 7px 28px 7px;
 
@@ -6,18 +21,19 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 166px 102px 167px;
+    padding: 64px 106px 102px 107px;
+
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 384px 64px 382px;
+    padding: 115px 264px 64px 262px;
   }
 }
 
 .feedback__title {
   margin: 0;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -25,7 +41,13 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
     font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 25px;
   }
 }
 
