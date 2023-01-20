@@ -9,7 +9,7 @@
 }
 
 .main-nav__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   min-width: 320px;
@@ -23,6 +23,26 @@
 
   .no-js & {
     position: static;
+
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+    }
+  }
+
+  .is-open & {
+    position: absolute;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+
+      display: grid;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -39,6 +59,14 @@
   width: 100%;
 
   text-align: center;
+
+  &:last-child {
+    background-image: linear-gradient(0deg, $color-black -50%, $color-seagull 15%);
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -110,6 +138,7 @@
   position: absolute;
   top: 17px;
   right: 20px;
+  z-index: 2;
 
   display: block;
   width: 23px;
@@ -117,12 +146,20 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../img/svg/icon-closed.svg");
+  background-image: url("../img/svg/icon-open.svg");
   border: none;
   cursor: pointer;
 
   .no-js & {
     display: none;
+  }
+
+  .is-open & {
+    background-image: url("../img/svg/icon-closed.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:hover {

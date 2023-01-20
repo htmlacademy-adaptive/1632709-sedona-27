@@ -21,13 +21,13 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 106px 102px 107px;
+    padding: 64px 102px 102px 102px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 264px 64px 262px;
+    padding: 115px 263px 67px 262px;
   }
 }
 

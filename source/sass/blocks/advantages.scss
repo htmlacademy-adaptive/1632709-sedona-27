@@ -1,10 +1,10 @@
 .advantages__heading {
-  padding: 39px 30px 33px 30px;
+  padding: 32px 30px 16px 30px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 124px 56px;
+    padding: 48px 124px 56px 124px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
 
+    picture {
+      flex-grow: 1;
+    }
+
     &--devil {
       flex-direction: row-reverse;
     }
@@ -31,6 +35,8 @@
   clip-path: polygon(50% 4%, 100% 0, 100% 100%, 0 100%, 0 0);
 
   @media (min-width: $tablet-width) {
+    max-height: 256px;
+
     clip-path: none;
   }
 }
@@ -49,11 +55,12 @@
 
   @media (min-width: $tablet-width) {
     width: 33.3%;
-    padding: 52px 10px 31px;
+    max-height: 256px;
+    padding: 52px 16px 31px 16px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 50px 51px;
+    padding: 52px 56px 51px 56px;
   }
 }
 
@@ -66,11 +73,6 @@
 
   @media (min-width: $tablet-width) {
     max-height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    min-height: 100%;
   }
 }
 
@@ -90,7 +92,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+  }
+}
+
+.advantages__card-title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -100,12 +110,24 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    margin-bottom: 23px;
   }
 }
 
 .advantages__card-description {
   margin: 0;
+}
+
+.advantages__card-description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .advantages__list {
@@ -138,12 +160,40 @@
 
   padding: 24px 33px;
 
+  border-bottom: 1px solid $color-light-grey;
+
   @media (min-width: $tablet-width) {
-    padding: 41px 37px;
+    padding: 52px 33px;
+
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px 50px 41px;
+    padding: 63px 50px 41px 50px;
+  }
+}
+
+.advantages__item--beauty-road {
+  @media (min-width: $tablet-width) {
+    padding: 41px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 50px 51px 50px;
+  }
+}
+
+.advantages__item--tourist {
+  padding: 24px 29px 28px 29px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 50px 41px 50px;
   }
 }
 
@@ -152,16 +202,16 @@
 
   text-align: left;
 
+  border: none;
+
   @media (min-width: $tablet-width) {
-    padding: 158px 40px 60px;
+    padding: 158px 40px 60px 40px;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 169px 50px 69px;
-
-    text-align: center;
+    padding: 169px 50px 69px 50px;
   }
 }
 
@@ -169,13 +219,31 @@
   content: "";
   position: absolute;
   top: 16px;
-  left: 18px;
+  left: 38px;
 
   width: 39px;
   height: 37px;
 
   background-image: url("../img/svg/icon-house.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 50%;
+
+    width: 77px;
+    height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 68px;
+    left: 50%;
+
+    width: 80px;
+    height: 73px;
+  }
 }
 
 .advantages__item--eat {
@@ -183,16 +251,16 @@
 
   text-align: left;
 
+  border: none;
+
   @media (min-width: $tablet-width) {
-    padding: 155px 33px 61px;
+    padding: 155px 33px 61px 33px;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 166px 50px 71px;
-
-    text-align: center;
+    padding: 166px 50px 71px 50px;
   }
 }
 
@@ -200,13 +268,31 @@
   content: "";
   position: absolute;
   top: 16px;
-  left: 18px;
+  left: 38px;
 
   width: 39px;
   height: 37px;
 
   background-image: url("../img/svg/icon-burger.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 61px;
+    left: 50%;
+
+    width: 80px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 74px;
+    left: 50%;
+
+    width: 73px;
+    height: 69px;
+  }
 }
 
 .advantages__item--souvenirs {
@@ -214,16 +300,16 @@
 
   text-align: left;
 
+  border: none;
+
   @media (min-width: $tablet-width) {
-    padding: 152px 36px 64px;
+    padding: 152px 36px 64px 36px;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 50px 67px;
-
-    text-align: center;
+    padding: 170px 50px 67px 50px;
   }
 }
 
@@ -231,18 +317,35 @@
   content: "";
   position: absolute;
   top: 16px;
-  left: 18px;
+  left: 38px;
 
   width: 39px;
   height: 37px;
 
   background-image: url("../img/svg/icon-gift.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 64px;
+    left: 52%;
+
+    width: 67px;
+    height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 68px;
+    left: 52%;
+    width: 78px;
+    height: 75px;
+  }
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -254,6 +357,22 @@
   }
 }
 
+.advantages__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .advantages__description {
   margin: 0;
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

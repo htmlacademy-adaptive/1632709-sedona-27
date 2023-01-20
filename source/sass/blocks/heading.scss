@@ -8,9 +8,13 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 
-    font-size: 21px;
+    font-size: 30px;
+
+    &--index {
+      font-size: 21px;
+    }
   }
 }
 

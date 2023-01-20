@@ -4,14 +4,13 @@
   border-top: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px 40px;
+    padding: 0 60px 40px 60px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-bottom: 84px;
+    padding: 0 0 84px 0;
   }
 }
 
@@ -21,11 +20,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 102px 66px 101px;
+    padding: 58px 102px 89px 101px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 378px 64px 377px;
+    padding: 62px 378px 89px 377px;
   }
 }
 
