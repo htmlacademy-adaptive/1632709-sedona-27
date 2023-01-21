@@ -58,6 +58,10 @@
   width: 100%;
 }
 
+.photo__link:hover {
+  opacity: 0.8;
+}
+
 .photo__link picture {
   min-width: 100%;
 }
@@ -114,6 +118,14 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @media (min-width: $desktop-width) {
     color: $color-white;

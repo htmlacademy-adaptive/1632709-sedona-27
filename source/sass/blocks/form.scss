@@ -14,7 +14,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 49%;
+      left: 50%;
 
       width: 1px;
       height: 100%;
@@ -58,6 +58,10 @@
     padding: 0 43px 15px 0;
 
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 63px 15px 0;
   }
 }
 
@@ -120,6 +124,17 @@
   list-style: none;
 }
 
+.form__input-wrapper--contact {
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .form__input-item {
   display: flex;
   flex-direction: column;
@@ -127,6 +142,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-bottom: 16px;
   }
 }
 
@@ -165,8 +181,7 @@
 .form__input {
   width: 100%;
   height: 58px;
-  padding: 0;
-  padding-left: 16px;
+  padding: 0 65px 0 16px;
 
   font-weight: 700;
   font-size: 18px;
@@ -213,7 +228,7 @@
     grid-template-columns: repeat(2, 1fr);
 
     &--tourist-places {
-      padding-bottom: 42px;
+      padding-bottom: 26px;
     }
   }
 
@@ -246,9 +261,13 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 122px 44px;
+    padding: 0 0 111px 26px;
 
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 111px 64px;
   }
 }
 
@@ -282,7 +301,7 @@
 
 .form__fieldset--emotions {
   margin: 0;
-  padding: 0 20px 24px 20px;
+  padding: 0 20px 0 20px;
 
   text-align: center;
 
@@ -290,7 +309,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 64px;
   }
 }
 
@@ -298,6 +316,7 @@
   position: relative;
 
   display: block;
+  align-self: start;
   margin-bottom: 16px;
   padding: 10px 0 10px 62px;
 
@@ -310,8 +329,24 @@
   cursor: pointer;
 }
 
-.form__radio[type="radio"] + .form__impression-option {
+.form__radio + .form__impression-option {
   border-radius: 50%;
+}
+
+.form__radio:focus + .form__impression-option {
+  outline: 1px solid $color-black;
+}
+
+.form__label-radio:hover .form__impression-option {
+  background-color: $color-whisper-2;
+}
+
+.form__label-radio:active .form__impression-option {
+  background-color: $color-light-grey-2;
+}
+
+.form__label-radio:active .form__impression-option::before {
+  opacity: 0.3;
 }
 
 .form__impression-option {
@@ -324,17 +359,9 @@
 
   background-color: $color-white-smoke;
   transform: translateY(-50%);
-
-  &:hover {
-    background-color: $color-whisper-2;
-  }
-
-  &:active {
-    background-color: $color-light-grey-2;
-  }
 }
 
-.form__radio[type="radio"]:checked + .form__impression-option::before {
+.form__radio:checked + .form__impression-option::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -348,7 +375,7 @@
   transform: translateY(-50%);
 }
 
-.form__radio[type="radio"]:checked:active + .form__impression-option::before {
+.form__radio:checked:active + .form__impression-option::before {
   opacity: 0.3;
 }
 
@@ -356,6 +383,7 @@
   position: relative;
 
   display: block;
+  align-self: start;
   padding: 10px 0 10px 62px;
 
   font-weight: 700;
@@ -367,8 +395,24 @@
   cursor: pointer;
 }
 
-.form__label-checkbox[type="checkbox"] + .form__checkbox-option {
+.form__label-checkbox + .form__checkbox-option {
   border-radius: 4px;
+}
+
+.form__checkbox:focus + .form__checkbox-option {
+  outline: 1px solid $color-black;
+}
+
+.form__label-checkbox:hover .form__checkbox-option {
+  background-color: $color-whisper-2;
+}
+
+.form__label-checkbox:active .form__checkbox-option {
+  background-color: $color-light-grey-2;
+}
+
+.form__label-checkbox:active .form__checkbox-option::before {
+  opacity: 0.3;
 }
 
 .form__checkbox-option {
@@ -382,17 +426,9 @@
 
   background-color: $color-white-smoke;
   transform: translateY(-50%);
-
-  &:hover {
-    background-color: $color-whisper-2;
-  }
-
-  &:active {
-    background-color: $color-light-grey-2;
-  }
 }
 
-.form__checkbox[type="checkbox"]:checked + .form__checkbox-option::before {
+.form__checkbox:checked + .form__checkbox-option::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -408,10 +444,14 @@
 .form__submit-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 64px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -425,6 +465,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-family: inherit;
   color: $color-white;
   text-transform: uppercase;
 
@@ -460,21 +501,24 @@
   color: rgba($color-black, 0.6);
 
   @media (min-width: $tablet-width) {
+    align-self: center;
+
     font-size: 14px;
     color: $color-night-rider;
   }
 }
 
 .form__input-text {
-  width: auto;
-  min-width: 280px;
+  width: 100%;
+  max-width: 768px;
   min-height: 150px;
-  margin-bottom: 56px;
+  margin-bottom: 51px;
   padding: 16px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  font-family: inherit;
 
   background-color: $color-white-smoke;
   border: none;

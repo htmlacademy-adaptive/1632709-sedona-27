@@ -8,7 +8,7 @@
     <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./img/favicons/apple.png" />
-    <link rel="manifest" href="./sedona.webmanifest.json" />
+    <link rel="manifest" href="./sedona.webmanifest" />
     <link
       rel="preload"
       href="fonts/ptsans.woff2"
@@ -92,6 +92,7 @@
                         type="text"
                         name="firstname"
                         placeholder="Пётр"
+                        value="Пётр"
                       />
                     </label>
                   </li>
@@ -103,6 +104,7 @@
                         type="text"
                         name="lastname"
                         placeholder="Пустота"
+                        value="Пустота"
                       />
                     </label>
                   </li>
@@ -114,6 +116,7 @@
                         type="text"
                         name="patronymic"
                         placeholder="Викторович"
+                        value="Викторович"
                       />
                     </label>
                   </li>
@@ -123,7 +126,7 @@
                 <legend class="form__legend form__legend--contact">
                   Контактная&nbsp;информация:
                 </legend>
-                <ul class="form__input-wrapper">
+                <ul class="form__input-wrapper form__input-wrapper--contact">
                   <li class="form__input-item">
                     <div class="form__input-icon form__input-icon--phone">
                       <label class="form__label"
@@ -269,13 +272,13 @@
                 name="message"
                 placeholder="Опишите подробно все свои восторги"
               ></textarea>
-              <div class="form__submit-wrapper">
-                <button class="form__button button" type="submit">
-                  Отправить отзыв
-                </button>
-                <p class="form__notification">* — обязательные поля</p>
-              </div>
             </fieldset>
+            <div class="form__submit-wrapper">
+              <button class="form__button button" type="submit">
+                Отправить отзыв
+              </button>
+              <p class="form__notification">* — обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>
@@ -328,6 +331,6 @@
         </div>
       </footer>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.min.js"></script>
   </body>
 </html>

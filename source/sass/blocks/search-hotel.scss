@@ -68,10 +68,6 @@
   background-color: $color-seagull;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    padding: 15px 121px 18px 121px;
-  }
-
   &:hover {
     background-color: $color-shakespeare;
   }
@@ -82,8 +78,16 @@
     background-color: $color-shakespeare-active;
   }
 
+  &:focus {
+    outline: 1px solid $color-black;
+  }
+
   &:disabled {
     background-color: $color-whisper-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 121px 18px 121px;
   }
 }
 

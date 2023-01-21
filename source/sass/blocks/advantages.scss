@@ -1,5 +1,5 @@
 .advantages__heading {
-  padding: 32px 30px 16px 30px;
+  padding: 32px 30px 32px 30px;
 
   text-align: center;
 
@@ -338,14 +338,15 @@
   @media (min-width: $desktop-width) {
     top: 68px;
     left: 52%;
+
     width: 78px;
     height: 75px;
   }
 }
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 24px;
+  max-width: 155px;
+  margin: 0 auto 24px auto;
 
   font-weight: 700;
   font-size: 18px;
@@ -355,13 +356,13 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
-}
 
-.advantages__title br {
-  display: none;
+  &--no-number {
+    margin: 0 0 24px 0;
+  }
 
   @media (min-width: $tablet-width) {
-    display: block;
+    margin: 0 auto 24px auto;
   }
 }
 

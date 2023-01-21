@@ -71,8 +71,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding: 13px 10px 12px 10px;
 
     background-color: $color-white;
     border: none;
@@ -85,7 +84,6 @@
 
 .main-nav__link {
   display: block;
-  width: 100%;
   padding-top: 17px;
   padding-bottom: 12px;
 
@@ -107,7 +105,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 5px;
 
     font-size: 14px;
     line-height: 21px;
