@@ -1,19 +1,26 @@
-.search-hotel {
-  padding: 38px 18px 49px;
+.search-hotel iframe {
+  display: block;
+
+  border: none;
+}
+
+.search-hotel__wrapper {
+  padding: 38px 18px 49px 18px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 155px 58px;
+    padding: 61px 155px 58px 155px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 61px 371px 66px;
+    padding: 61px 372px 66px 372px;
   }
 }
 
 .search-hotel__title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 21px;
@@ -21,16 +28,37 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+
     font-size: 30px;
   }
 }
 
 .search-hotel__description {
   margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.search-hotel__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .search-hotel__button {
-  padding: 16px 49px;
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
 
   font-weight: 700;
   font-size: 21px;
@@ -38,8 +66,57 @@
   color: $color-white;
 
   background-color: $color-seagull;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-shakespeare-active;
+  }
+
+  &:focus {
+    outline: 1px solid $color-black;
+  }
+
+  &:disabled {
+    background-color: $color-whisper-2;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 121px 18px;
+    padding: 15px 121px 18px 121px;
   }
+}
+
+.search-hotel__map {
+  position: relative;
+
+  max-width: 100%;
+  min-height: 350px;
+}
+
+.search-hotel__map iframe {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  border: none;
+}
+
+.search-hotel__size {
+  min-height: 350px;
+}
+
+.search-hotel__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
 }
