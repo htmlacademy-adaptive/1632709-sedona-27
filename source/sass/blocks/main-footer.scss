@@ -1,9 +1,8 @@
 .main-footer {
-  margin-top: 10px;
-  padding-top: 30px;
+  margin-top: auto;
+  padding-top: 39px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     padding-top: 0;
   }
 }
@@ -22,11 +21,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px 36px 45px;
+    padding: 36px 76px 36px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 120px 36px 104px;
+    padding: 36px 136px 36px 104px;
   }
 }
 
@@ -59,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-right: 89px;
   }
 }
 

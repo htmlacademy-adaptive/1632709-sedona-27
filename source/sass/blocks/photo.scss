@@ -127,6 +127,10 @@
     opacity: 0.4;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+  }
+
   @media (min-width: $desktop-width) {
     color: $color-white;
   }
@@ -152,7 +156,7 @@
 }
 
 .photo__content {
-  padding-top: 15px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -163,6 +167,10 @@
     background-color: $color-white-smoke;
 
     gap: 20px;
+
+    &--dark {
+      background-color: $color-whisper-3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -172,5 +180,9 @@
     flex-grow: 1;
 
     background-color: rgba(0, 0, 0, 0.3);
+
+    &--dark {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

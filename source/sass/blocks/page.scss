@@ -13,7 +13,10 @@
 .page__wrapper {
   min-width: 320px;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
   background-color: $color-white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
